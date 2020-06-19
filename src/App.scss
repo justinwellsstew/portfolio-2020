@@ -1,0 +1,71 @@
+$blue:rgb(85, 53, 212);
+$purple: rgb(164, 53, 212);
+$teal: #3594d4;
+$black: rgb(26,20,16);
+$white: #fff;
+
+* { padding:0;
+    margin: 0;
+    font-size: 62%;}
+
+body{
+    background-color: $black;
+    color: lighten($teal, 75%);
+    font-family: Lato;
+    box-sizing: border-box;
+}
+
+.header{
+    position: relative;
+    margin: 2rem;
+    height: 90vh;
+    background-image: linear-gradient(to right bottom, rgba(85, 53, 212, 0.8), rgba(164, 53, 212, 0.75)), url('./img/trees.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.header__text-box {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+}
+
+.header__main-header{
+    display:block;
+    color: lighten($teal, 20%);
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    text-shadow: 2px 2px 5px darken($blue, 25%);
+}
+
+.header__sub-header{
+    display:block;
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .53rem;
+}
+
+.btn:link, 
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn--black {
+    background-color: $teal;
+    font-size: 1.5rem;
+    color: $white;
+    margin-top: 2rem;
+}
